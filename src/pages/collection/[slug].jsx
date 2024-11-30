@@ -16,10 +16,8 @@ const CollectionPage = () => {
   const { data } = useGetAllProductByCategory(params?.slug);
 
   useEffect(() => {
-    if (data?.results?.length > 0) {
       const res = getProductTransformResponse(data?.results, params?.slug);
       setCollection(res);
-    }
   }, [data, params?.slug]);
 
   return (

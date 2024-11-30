@@ -54,10 +54,10 @@ const App = ({ Component, pageProps }) => {
   return (
     <Fragment>
       <Head>
-        <title>Griha Decor :: One of the finest sofa manufactor of Nepal</title>
+        <title>Griha Decor :: Latest Interior Products for Modern Living</title>
         <meta
           name="description"
-          content="Griha Decor :: One of the finest sofa manufactor of Nepal"
+          content="Griha Decor :: Latest Interior Products for Modern Living"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

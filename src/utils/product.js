@@ -243,16 +243,16 @@ export const getDiscountPercentage = (price, compareArPrice) => {
 
 export const getProductTransformResponse = (item, slug = 'Griha Decor') => {
     return {
-        id: slug,
-        title: slug,
-        handle: slug,
+        id: unSlugify(slug),
+        title: unSlugify(slug),
+        handle: unSlugify(slug),
         image: {
-            originalSrc: item[0]?.image || null,
+            originalSrc: item?.[0]?.image || null,
         },
         products: {
-            edges: item.map((product, index) => ({
+            edges: item?.length > 0 ? item?.map((product, index) => ({
                 node: getProductDetailTransformResponse(product, index),
-            })),
+            })) : [],
         },
     };
 }
@@ -316,3 +316,18 @@ export const getProductDetailTransformResponse = (product, index = 0) => {
         },
     }
 }
+
+export const unSlugify = (slug) => {
+    if (slug) {
+        const title = slug?.replace(/[-_]/g, ' ') ?? '';
+        const words = title.split(" ");
+
+        for (let i = 0; i < words.length; i++) {
+            words[i] = words?.[i]?.[0]?.toUpperCase() + words[i]?.substr(1);
+        }
+        return words.join(" ");
+    }
+
+    return '';
+
+};

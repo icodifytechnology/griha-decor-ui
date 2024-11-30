@@ -35,7 +35,7 @@ export const useGetProductDetail = (slug) => {
 	const api = `${apiEndpoint.product}/${slug}`;
 	return useQuery({
 		enabled: slug ? true : false,
-		queryKey: [productDetailQueryKey],
+		queryKey: [productDetailQueryKey, slug],
 		queryFn: () => new AuthorizedService()
 			.get(api)
 			.then((res) => res.data)
@@ -46,7 +46,7 @@ export const useGetProductDetail = (slug) => {
 export const useGetAllProductByCategory = (slug) => {
 	return useQuery({
 		enabled: slug ? true : false,
-		queryKey: [productCategoryQueryKey],
+		queryKey: [productCategoryQueryKey, slug],
 		queryFn: () => new AuthorizedService()
 			.get(`${apiEndpoint.categories}/${slug}`)
 			.then((res) => res.data)

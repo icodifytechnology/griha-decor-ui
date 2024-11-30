@@ -34,7 +34,6 @@ const productNav = [
 ];
 
 const ProductsTab = ({ products, limit = 8, className }) => {
-    console.log({ products })
   //   const [data, setData] = useState(products);
 
   //   const onHandler = (event) => {
