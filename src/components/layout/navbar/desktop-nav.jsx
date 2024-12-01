@@ -20,7 +20,6 @@ const DesktopNav = ({ bg, className }) => {
                   <Link href="/">Home</Link>
                 </li>
                 <li>
-                  {" "}
                   <Link href="/about">About</Link>
                 </li>
                 {categories?.map((navItem, index) => (
