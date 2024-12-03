@@ -73,12 +73,14 @@ const ProductsTab = ({ products, limit = 8, className }) => {
 
         {!products && <Loader />}
 
-        {products?.length > 0 &&
-          products?.map((product) => (
-            <Col xs={6} md={4} lg={3} key={product?.node?.id}>
-              <ProductCard product={product?.node} />
-            </Col>
-          ))}
+        <Row className="products-grid-mobile mtn-30">
+          {products?.length > 0 &&
+            products?.map((product) => (
+              <Col xs={6} md={4} lg={3} key={product?.node?.id}>
+                <ProductCard product={product?.node} />
+              </Col>
+            ))}
+        </Row>
       </Container>
     </div>
   );

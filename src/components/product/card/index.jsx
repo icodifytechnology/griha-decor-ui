@@ -60,14 +60,14 @@ const ProductCard = ({product, className}) => {
                         <Link href={`/product/${handle}`}>{title}</Link>
                     </ProductTitle>
                     <ProductPrice>
-                        {isDiscounted ? (
+                        {/* {isDiscounted ? (
                             <>
                                 <del className="price old">{CURRENCY + compareAtPrice} </del>
                                 <span className="price new">{CURRENCY + price}</span>
                             </>
-                        ) : (
+                        ) : ( */}
                             <span className="price new">{CURRENCY + price}</span>
-                        )}
+                        {/* )} */}
                     </ProductPrice>
                 </ProductMeta>
 

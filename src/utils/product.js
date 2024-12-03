@@ -286,7 +286,7 @@ export const getProductDetailTransformResponse = (product, index = 0) => {
                         id: "variant_" + index,
                         sku: product.sku || null,
                         title: product.name || null,
-                        quantityAvailable: product.product_quantity || 0,
+                        quantityAvailable: product.product_quantity || product.productQuantity ||0,
                         compareAtPriceV2: {
                             amount: product.formatted_special_price || 0,
                         },
