@@ -5,7 +5,7 @@ import Slider, {Slide} from "@components/ui/swiper";
 import {ProductThumbGallery, ProductThumbNav} from "@components/product/details/details.style";
 
 const ProductDetailsThumb = ({thumbnails}) => {
-    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
     const thumbGalleryConfig = {
         pagination: false,

@@ -11,9 +11,14 @@ import { ReactQueryDevtoolsPanel } from "@tanstack/react-query-devtools";
 import { PagesProgressBar as ProgressBar } from "next-nprogress-bar";
 
 // CSS import
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import "swiper/swiper.scss";
+import "swiper/components/navigation/navigation.scss";
+import "swiper/components/pagination/pagination.scss";
+import "swiper/components/effect-fade/effect-fade.scss";
+
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
 //import "swiper/components/effect-fade/effect-fade.scss";
 import "react-perfect-scrollbar/dist/css/styles.css";
 

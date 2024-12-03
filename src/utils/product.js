@@ -279,6 +279,14 @@ export const getProductDetailTransformResponse = (product, index = 0) => {
                 },
             ],
         },
+        gallery: {
+            edges: product?.images?.map((image, index) => ({
+                node: {
+                    id: `image_${index}`,
+                    originalSrc: image.original_image_url || null
+                }
+            })),
+        },
         variants: {
             edges: [
                 {
@@ -286,7 +294,7 @@ export const getProductDetailTransformResponse = (product, index = 0) => {
                         id: "variant_" + index,
                         sku: product.sku || null,
                         title: product.name || null,
-                        quantityAvailable: product.product_quantity || product.productQuantity ||0,
+                        quantityAvailable: product.product_quantity || product.productQuantity || 0,
                         compareAtPriceV2: {
                             amount: product.formatted_special_price || 0,
                         },

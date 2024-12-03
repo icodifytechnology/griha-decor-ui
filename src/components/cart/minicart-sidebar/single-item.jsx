@@ -35,7 +35,7 @@ const MiniCartProduct = ({product}) => {
                         alt={name}
                         width={110}
                         height={120}
-                        src={images?.edges[0]?.node?.originalSrc}
+                        src={images?.edges?.[0]?.node?.originalSrc}
                     />
                 </MiniCartProThumb>
             </Link>
