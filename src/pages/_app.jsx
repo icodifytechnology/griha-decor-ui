@@ -79,7 +79,7 @@ const App = ({ Component, pageProps }) => {
             </MainProvider>
           </BootstrapProvider>
         </ThemeProvider>
-        {process.env.NODE_ENV != 'production' && <ReactQueryDevtoolsPanel initialIsOpen={false} />}
+        {/* {process.env.NODE_ENV != 'production' && <ReactQueryDevtoolsPanel initialIsOpen={false} />} */}
         <ProgressBar
           height="4px"
           color="#E89400"

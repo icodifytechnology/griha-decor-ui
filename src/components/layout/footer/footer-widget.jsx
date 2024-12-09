@@ -13,9 +13,7 @@ const FooterWidget = (props) => {
           <Col md={6} lg={4}>
             <Widget title="ABOUT US" mb={[30, null, null, 0]}>
               <p className="about-text">
-                Lorem ipsum dolor sit amet cons adipisicing elit sed do eiusm
-                tempor incididunt ut labor et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud.
+              Griha Decor specializes in stylish sofa beds and interior furnishings. We focus on quality, comfort, and innovative designs to create functional, beautiful spaces that feel like home.
               </p>
 
               <SocialIcons mt={15}>

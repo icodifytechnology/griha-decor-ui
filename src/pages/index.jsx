@@ -1,28 +1,27 @@
 import Head from "next/head";
+import { useEffect, useState } from "react";
 import Layout from "@components/layout";
 import settings from "@data/settings.json";
 import LatestBlog from "@components/blog/posts";
 import Promotions from "@components/promotions";
 import Categories from "@components/categories";
-import sliderData from "@data/slider/home-1.json";
 import { ProductsTab } from "@components/product/feed";
 import { SliderOne as Slider } from "@components/slider";
 import { useGetBannerImages } from "src/reactQuery/home";
 import { useGetProductCollection } from "src/reactQuery/product";
-import { useEffect, useState } from "react";
 import { getProductTransformResponse } from "@utils/product";
 
 const Home = () => {
   const { data: sliderData } = useGetBannerImages();
-  const [products, setProducts] = useState([]);
+  // const [products, setProducts] = useState([]);
   const { data } = useGetProductCollection();
 
-  useEffect(() => {
-    if (data?.featured_products) {
-      const response = getProductTransformResponse(data.featured_products);
-      setProducts(response?.products?.edges);
-    }
-  }, [data]);
+  // useEffect(() => {
+  //   if (data?.featured_products) {
+  //     const response = getProductTransformResponse(data.featured_products);
+  //     setProducts(response?.products?.edges);
+  //   }
+  // }, [data]);
 
   return (
     <Layout>
@@ -35,11 +34,11 @@ const Home = () => {
 
       <Categories />
 
-      <ProductsTab products={products} limit={8} />
+      <ProductsTab products={data} limit={8} />
 
       <Promotions />
 
-      <LatestBlog posts={[]} pt={[60, 60, 100]} />
+      {/* <LatestBlog posts={[]} pt={[60, 60, 100]} /> */}
     </Layout>
   );
 };

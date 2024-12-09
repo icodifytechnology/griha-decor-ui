@@ -105,14 +105,14 @@ const ProductDetailsContent = ({product, ...props}) => {
             {/*</ProductRatings>*/}
 
             <ProductPrices>
-                {isDiscounted ? (
+                {/* {isDiscounted ? (
                     <>
                         <del className="price old">{CURRENCY + compareAtPrice} </del>
                         <span className="price new">{CURRENCY + price}</span>
                     </>
-                ) : (
+                ) : ( */}
                     <span className="price new">{CURRENCY + price}</span>
-                )}
+                {/* )} */}
             </ProductPrices>
 
             {description && parse(description)}

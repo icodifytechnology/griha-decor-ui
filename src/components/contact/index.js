@@ -1,4 +1,4 @@
-import {Container, Col, Row, Form} from "@bootstrap";
+import { Container, Col, Row, Form } from "@bootstrap";
 import {
     ContactMap,
     ContactWrapper,
@@ -6,8 +6,8 @@ import {
     ContactContentWrap,
     ContactContentTitle, ContactInfoMethod, ContactInfoText, ContactForm
 } from "@components/contact/contact.style";
-import {InputField} from "@components/checkout/checkout-form.style";
-import Input, {TextArea} from "@components/ui/input";
+import { InputField } from "@components/checkout/checkout-form.style";
+import Input, { TextArea } from "@components/ui/input";
 import Button from "@components/ui/button";
 
 const Contact = (props) => {
@@ -16,7 +16,8 @@ const Contact = (props) => {
             <Container>
                 <ContactMap mb={60}>
                     <iframe
-                        src="https://maps.google.com/maps?q=121%20King%20St%2C%20Melbourne%20VIC%203000%2C%20Australia&t=&z=13&ie=UTF8&iwloc=&output=embed"/>
+                        src="https://maps.google.com/maps?q=27.74014,85.35647&t=&z=13&ie=UTF8&iwloc=&output=embed">
+                    </iframe>
                 </ContactMap>
 
                 <Row>
@@ -31,8 +32,8 @@ const Contact = (props) => {
                                     Phone:
                                 </ContactInfoMethod>
                                 <ContactInfoText>
-                                    <p><a href="tel:+012345678102">+012 345 678 102</a></p>
-                                    <p><a href="tel:+012345678203">+012 345 678 203</a></p>
+                                    <p><a href="tel:+9779768786297">+977 9768786297</a></p>
+                                    <p><a href="tel:+9779802378101">+977 9802378101</a></p>
                                 </ContactInfoText>
                             </ContactInfoItem>
 
@@ -41,8 +42,8 @@ const Contact = (props) => {
                                     Email:
                                 </ContactInfoMethod>
                                 <ContactInfoText>
-                                    <p><a href="mailto:email@here.com">email@here.com</a></p>
-                                    <p><a href="mailto:your@email.here">your@email.here</a></p>
+                                    <p><a href="mailto:grihadecor2024@gmail.com">grihadecor2024@gmail.com</a></p>
+                                    <p><a href="mailto:info@grihadecor.com">info@grihadecor.com</a></p>
                                 </ContactInfoText>
                             </ContactInfoItem>
 
@@ -51,8 +52,8 @@ const Contact = (props) => {
                                     Address:
                                 </ContactInfoMethod>
                                 <ContactInfoText>
-                                    <p>Address goes here,</p>
-                                    <p>street, Crossroad 123.</p>
+                                    <p>Akhasedhara</p>
+                                    <p>Kapan-10</p>
                                 </ContactInfoText>
                             </ContactInfoItem>
                         </ContactContentWrap>

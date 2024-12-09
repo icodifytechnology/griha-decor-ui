@@ -1,4 +1,4 @@
-import styled, {devices, themeGet, space} from "@styled";
+import styled, { devices, themeGet, space } from "@styled";
 
 export const ReviewItem = styled.div`
   display: flex;
@@ -21,8 +21,8 @@ export const ReviewItem = styled.div`
     align-items: center;
     justify-content: center;
     color: ${themeGet("colors.text")};
-    border-radius: ${themeGet('radii.circle')};
-    border: 1px solid ${themeGet('colors.borderLight')};
+    border-radius: ${themeGet("radii.circle")};
+    border: 1px solid ${themeGet("colors.borderLight")};
 
     svg {
       font-size: 50px;
@@ -37,21 +37,21 @@ export const ReviewItem = styled.div`
     width: 100%;
     line-height: 1;
     margin-bottom: 5px;
-    font-size: ${themeGet('fontSizes.standard')};
+    font-size: ${themeGet("fontSizes.standard")};
 
     .review-name {
       margin-bottom: 7px;
       line-height: 1;
-      font-size: ${themeGet('fontSizes.body')};
-      font-weight: ${themeGet('fontWeights.medium')};
+      font-size: ${themeGet("fontSizes.body")};
+      font-weight: ${themeGet("fontWeights.medium")};
     }
 
     .ratings {
       margin-bottom: 5px;
-      color: ${themeGet('colors.primary')};
+      color: ${themeGet("colors.primary")};
     }
   }
-`
+`;
 
 export const ReviewFormWrap = styled.div`
   ${devices.md} {
@@ -61,30 +61,30 @@ export const ReviewFormWrap = styled.div`
   h3 {
     font-size: 26px;
     margin-bottom: 25px;
-    font-weight: ${themeGet('fontWeights.subHeading')};
+    font-weight: ${themeGet("fontWeights.subHeading")};
   }
-`
+`;
 
 export const ProInfoList = styled.ul`
   margin-bottom: 15px;
 
   li {
     display: block;
-    font-size: ${themeGet('fontSizes.standard')};
+    font-size: ${themeGet("fontSizes.standard")};
 
     &:not(:last-child) {
-      margin-bottom: 13px
+      margin-bottom: 13px;
     }
 
     span {
       min-width: 70px;
       margin: 0 26px 0 0;
       display: inline-block;
-      color: ${themeGet('colors.heading')};
-      font-weight: ${themeGet('fontWeights.medium')};
+      color: ${themeGet("colors.heading")};
+      font-weight: ${themeGet("fontWeights.medium")};
     }
   }
-`
+`;
 
 export const ProDescription = styled.div`
   line-height: 1.7;
@@ -95,20 +95,20 @@ export const ProDescription = styled.div`
       margin-bottom: 15px;
     }
   }
-`
+`;
 
 export const ProductDescReviewContent = styled.div`
   overflow: hidden;
   line-height: 24px;
   text-align: left;
   padding: 30px;
-  border: 1px solid ${themeGet('colors.borderLight')};
+  border: 1px solid ${themeGet("colors.borderLight")};
 
   ${devices.sm} {
     padding-left: 20px;
     padding-right: 20px;
   }
-`
+`;
 
 export const ProductDescReviewWrapper = styled.section`
   ${space}
@@ -123,10 +123,10 @@ export const ProductDescReviewWrapper = styled.section`
       cursor: pointer;
       position: relative;
       padding-bottom: 15px;
-      color: ${themeGet('colors.heading')};
-      transition: ${themeGet('transition')};
-      font-family: ${themeGet('fonts.heading')};
-      font-weight: ${themeGet('fontWeights.subHeading')};
+      color: ${themeGet("colors.heading")};
+      transition: ${themeGet("transition")};
+      font-family: ${themeGet("fonts.heading")};
+      font-weight: ${themeGet("fontWeights.subHeading")};
 
       ${devices.sm} {
         margin: 0 10px;
@@ -140,22 +140,24 @@ export const ProductDescReviewWrapper = styled.section`
         content: "";
         bottom: -1px;
         position: absolute;
-        transition: ${themeGet('transition')};
+        transition: ${themeGet("transition")};
       }
 
-      &.react-tabs__tab--selected, &:hover {
+      &.react-tabs__tab--selected,
+      &:hover {
         &:after {
-          background-color: ${themeGet('colors.primary')};
+          background-color: ${themeGet("colors.primary")};
         }
       }
     }
   }
-`
+`;
 
 export const ProductThumbNav = styled.div`
   margin-top: 10px;
 
   figure {
+    background: #f2f2f2;
     height: 85px;
     overflow: hidden;
     position: relative;
@@ -170,10 +172,9 @@ export const ProductThumbNav = styled.div`
     border: 1px solid transparent;
 
     &-thumb-active {
-      border-color: ${themeGet('colors.primary')};
+      border-color: ${themeGet("colors.primary")};
     }
   }
-
 
   [class*="swiper-button"] {
     height: 30px;
@@ -184,10 +185,11 @@ export const ProductThumbNav = styled.div`
       font-size: 12px !important;
     }
   }
-`
+`;
 
 export const ProductThumbGallery = styled.div`
   figure {
+    background: #f2f2f2;
     height: 500px;
     overflow: hidden;
     position: relative;
@@ -204,7 +206,7 @@ export const ProductThumbGallery = styled.div`
       height: 300px;
     }
   }
-`
+`;
 
 export const ProductSocialShare = styled.div`
   display: flex;
@@ -214,9 +216,9 @@ export const ProductSocialShare = styled.div`
 
   h4 {
     margin-right: 10px;
-    color: ${themeGet('colors.text')};
-    font-size: ${themeGet('fontSizes.standard')};
-    font-weight: ${themeGet('fontWeights.heading')};
+    color: ${themeGet("colors.text")};
+    font-size: ${themeGet("fontSizes.standard")};
+    font-weight: ${themeGet("fontWeights.heading")};
   }
 
   .media {
@@ -225,37 +227,37 @@ export const ProductSocialShare = styled.div`
     a {
       font-size: 18px;
       display: inline-block;
-      color: ${themeGet('colors.text')};
+      color: ${themeGet("colors.text")};
 
       &:not(:last-child) {
         margin-right: 15px;
       }
 
       &:hover {
-        color: ${themeGet('colors.primary')};
+        color: ${themeGet("colors.primary")};
       }
     }
   }
-`
+`;
 
 export const QuantityIncDecButton = styled.div`
   width: 120px;
   display: flex;
   margin-right: 15px;
-  border: 1px solid ${themeGet('colors.primary')};
+  border: 1px solid ${themeGet("colors.primary")};
 
   .btn {
     &:hover {
-      color: ${themeGet('colors.white')};
-      background-color: ${themeGet('colors.primary')};
+      color: ${themeGet("colors.white")};
+      background-color: ${themeGet("colors.primary")};
     }
 
     &-decrement {
-      border-right: 1px solid ${themeGet('colors.primary')};
+      border-right: 1px solid ${themeGet("colors.primary")};
     }
 
     &-increment {
-      border-left: 1px solid ${themeGet('colors.primary')};
+      border-left: 1px solid ${themeGet("colors.primary")};
     }
   }
 
@@ -264,9 +266,9 @@ export const QuantityIncDecButton = styled.div`
     border: none;
     display: block;
     text-align: center;
-    font-weight: ${themeGet('fontWeights.subHeading')};
+    font-weight: ${themeGet("fontWeights.subHeading")};
   }
-`
+`;
 
 export const ProductActionButton = styled.div`
   margin-top: 30px;
@@ -279,7 +281,7 @@ export const ProductActionButton = styled.div`
 
       ${devices.xs} {
         padding: 10px 20px;
-        font-size: ${themeGet('fontSizes.standard')};
+        font-size: ${themeGet("fontSizes.standard")};
       }
     }
   }
@@ -291,9 +293,9 @@ export const ProductActionButton = styled.div`
       padding: 0;
       border: none;
       line-height: 1;
-      color: ${themeGet('colors.text')};
-      font-family: ${themeGet('fonts.body')};
-      font-size: ${themeGet('fontSizes.standard')};
+      color: ${themeGet("colors.text")};
+      font-family: ${themeGet("fonts.body")};
+      font-size: ${themeGet("fontSizes.standard")};
 
       &:not(:last-child) {
         margin-right: 20px;
@@ -305,19 +307,19 @@ export const ProductActionButton = styled.div`
       }
 
       &:hover {
-        color: ${themeGet('colors.primary')};
+        color: ${themeGet("colors.primary")};
       }
     }
   }
-`
+`;
 
 export const ProductSwatchItem = styled.div`
   label {
     margin-bottom: 3px;
-    color: ${themeGet('colors.heading')};
-    font-weight: ${themeGet('fontWeights.subHeading')};
+    color: ${themeGet("colors.heading")};
+    font-weight: ${themeGet("fontWeights.subHeading")};
   }
-`
+`;
 
 export const ProductSwatches = styled.div`
   margin-top: 20px;
@@ -327,13 +329,13 @@ export const ProductSwatches = styled.div`
       margin-bottom: 10px;
     }
   }
-`
+`;
 
 export const ProductPrices = styled.div`
   font-size: 22px;
   margin-top: 15px;
   margin-bottom: 20px;
-  color: ${themeGet('colors.heading')};
+  color: ${themeGet("colors.heading")};
 
   ${devices.xs} {
     margin-top: 10px;
@@ -343,10 +345,10 @@ export const ProductPrices = styled.div`
   .price {
     &.old {
       margin-right: 5px;
-      color: ${themeGet('colors.darkgray')};
+      color: ${themeGet("colors.darkgray")};
     }
   }
-`
+`;
 
 export const ProductRatings = styled.div`
   margin-top: 5px;
@@ -354,38 +356,38 @@ export const ProductRatings = styled.div`
   svg {
     width: 16px;
     overflow: hidden;
-    color: ${themeGet('colors.primary')};
-    font-size: ${themeGet('fontSizes.body')};
+    color: ${themeGet("colors.primary")};
+    font-size: ${themeGet("fontSizes.body")};
   }
-`
+`;
 
 export const ProductSKU = styled.p`
   line-height: 1;
   font-size: 13px;
 
   strong {
-    color: ${themeGet('colors.heading')};
-    font-weight: ${themeGet('fontWeights.subHeading')};
+    color: ${themeGet("colors.heading")};
+    font-weight: ${themeGet("fontWeights.subHeading")};
   }
-`
+`;
 
 export const ProductName = styled.h2`
   line-height: 1;
   font-size: 24px;
   margin: 15px 0;
-  color: ${themeGet('colors.heading')};
-  font-weight: ${themeGet('fontWeights.subHeading')};
+  color: ${themeGet("colors.heading")};
+  font-weight: ${themeGet("fontWeights.subHeading")};
 
   ${devices.xs} {
     font-size: 20px;
     margin-bottom: 10px;
   }
-`
+`;
 
 export const ContentWrap = styled.div`
   line-height: 26px;
-  font-family: ${themeGet('fonts.body')};
-  font-size: ${themeGet('fontSizes.standard')};
+  font-family: ${themeGet("fonts.body")};
+  font-size: ${themeGet("fontSizes.standard")};
 
   ${devices.sm} {
     margin-top: 25px;
@@ -404,8 +406,8 @@ export const ContentWrap = styled.div`
       }
     }
   }
-`
+`;
 
 export const ProductDetailsWrapper = styled.section`
   ${space}
-`
+`;

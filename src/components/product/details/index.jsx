@@ -9,13 +9,13 @@ const ProductDetails = ({ product, ...props }) => {
     <ProductDetailsWrapper className="product-details-content" {...props}>
       <Container>
         <Row>
-          <Col md={6} lg={5}>
+          <Col md={6} lg={6}>
             {product?.gallery?.edges?.length > 0 && (
               <ProductDetailsThumb thumbnails={product?.gallery?.edges} />
             )}
           </Col>
 
-          <Col md={6} lg={7}>
+          <Col md={6} lg={6}>
             <ProductDetailsContent product={product} className="details-page" />
           </Col>
         </Row>

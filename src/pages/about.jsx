@@ -22,8 +22,7 @@ const AboutPage = () => {
 
             <section className="about-page-wrapper">
                 <Container>
-                    <h2>Griha Decor is a global furniture destination for somethings. We sell cutting-edge furniture and offer
-                        a wide variety of fashion-related content.</h2>
+                    <h2>Griha Decor specializes in stylish sofa beds and interior furnishings. We focus on quality, comfort, and innovative designs to create functional, beautiful spaces that feel like home..</h2>
                 </Container>
 
                 <Container fluid className="mt-3 mt-md-5">
@@ -57,22 +56,14 @@ const AboutPage = () => {
                         <Col lg={6} className="mb-5 mb-lg-0">
                             <div className="about-store">
                                 <h4>OUR STORES</h4>
-                                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure dolor in reprehenderit in voluptate velit esse. Lorem ipsum dolor sit amet
-                                    conse ctetur adipisicing elit, sed do eiusmod tempor.</p>
+                                <p>Griha Decor began with a simple idea: to make every home a haven of beauty and comfort. Founded by a team of design enthusiasts, we saw a gap in the market for multifunctional, aesthetically pleasing furnishings that cater to modern lifestyles. From sofa beds that optimize space to carefully curated interior accessories, we craft products that reflect our passion for design and quality.</p>
                             </div>
                         </Col>
 
                         <Col lg={6}>
                             <div className="about-store">
                                 <h4>OUR MISSION</h4>
-                                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure dolor in reprehenderit in voluptate velit esse. Lorem ipsum dolor sit amet
-                                    conse ctetur adipisicing elit, sed do eiusmod tempor.</p>
+                                <p>At Griha Decor, our mission is to bring comfort, style, and functionality into every home. We aim to transform living spaces with thoughtfully designed sofa beds, accessories, and furnishings that blend elegance with practicality. By prioritizing quality, affordability, and innovation, we strive to create products that enhance everyday living and inspire a sense of belonging in every home.</p>
                             </div>
                         </Col>
                     </Row>

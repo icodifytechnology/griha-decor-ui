@@ -285,6 +285,7 @@ export const ProductImage = styled.div`
   width: 100%;
 
   .thumb {
+    background : #f2f2f2;
     z-index: 1;
     max-width: 100%;
 

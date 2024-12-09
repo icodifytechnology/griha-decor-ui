@@ -56,7 +56,7 @@ export const SlideContent = styled.div`
   ${typography};
 
   & > p {
-    max-width: 470px;
+    // max-width: 470px;
 
     ${props => props.textAlign === "center" && css`
       margin: auto;
